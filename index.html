@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <link rel="stylesheet" href="style.css">
+      <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+      <script src="https://kit.fontawesome.com/3863b52dc6.js" crossorigin="anonymous"></script>
+      <title>McLean High Robotics</title>
+   </head>
+   <body>
+
+      <nav id="sidebar">
+         <div class="toggle-btn" onclick="show()">
+            <span></span>
+            <span></span>
+            <span></span>
+         </div>
+         <ul>
+            <li><a href="#"><input type="image" src="logo.png" alt="logo"></a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Our Teams</a></li>
+            <li><a href="#">About VEX</a></li>
+            <li><a href="#">Sponsors</a></li>
+            <li><a href="#">Events</a></li>
+            <li><a href="#">Tips</a></li>
+            <li><a href="#">Join</a></li>
+            <li><a href="#">Contact Us</a></li>
+         </ul>
+      </nav>
+      <div class="fixedHeaderSpace"></div>
+
+      <div class="welcome">
+         <div class="text">
+            <h1>McLean High Robotics</h1>
+            <h2>22101</h2>
+         </div>
+      </div>
+      <div class="location">
+         <i class="fas fa-map-pin fa-3x"></i>Located in McLean, Virginia
+      </div>
+
+      <section class = "about">
+            <h2>About Our Organization</h2>
+            <div class = "aboutGrid">
+               <div class="experience">
+                  <i class="fas fa-brain fa-4x"></i>
+                  <h3>Experience</h3>
+                  <p>Our organization consists of members of all levels of experience, ranging from having no past exposure to robotics at all to aving many previous experiences with First Lego League and VEX robotics. We welcome inexperienced members and look to foster hard-orking, dedicated students’ interest in all areas of STEM.</p>
+            </div>
+            <div class="awards">
+               <i class="fas fa-trophy fa-4x"></i>
+               <h3>Awards</h3>
+               <p>Our organization has been awarded:
+                  <br>1x Excellence Award
+                  <br>2x Design Award
+                  <br>1x State Design Award
+               </p>
+            </div>
+            <div class="community">
+               <i class="fas fa-users fa-4x"></i>
+               <h3>Community</h3>
+               <p>Our organization strives to encourage students of all ages to learn more about STEM and the design process. We hope to continue to present to and teach many more students from a diverse range of backgrounds in the coming years. Our current priority is being a trong advocate for the GirlPowered community- we are actively seeking additional female members who will feel welcomed and mpowered by working with us.</p>
+            </div>
+         </div>
+      </section>
+
+      <section class = "teams">
+         <h2>Meet Our Teams</h2>
+         <div class = "teamsGrid">
+            <a href="#" class = "btn">
+               <div class="TeamA allTeams">
+                  <img src="22101A.jpg" alt="">
+                  <h3>McRoboto</h3>
+                  <h3>22101A</h3>
+                  <p>3rd year team</p>
+               </div>
+            </a>
+            <a href="#" class = "btn">
+               <div class="TeamZ allTeams">
+                  <img src="22101Z.jpg" alt="">
+                  <h3>Mr Roboto</h3>
+                  <h3>22101Z</h3>
+                  <p>2nd year team</p>
+               </div>
+            </a>
+         </div>
+      </section>
+
+      <div class="gallery">
+         <h2>Gallery</h2>
+         <div class="content">
+            <div class="a"><a href="#"><img src="Photos/pic1.jpg" alt=""></a></div>
+            <div class="b"><a href="#"><img src="Photos/pic2.jpg" alt=""></a></div>
+            <div class="c"><a href="#"><img src="Photos/pic3.jpg" alt=""></a></div>
+            <div class="d"><a href="#"><img src="Photos/pic4.jpg" alt=""></a></div>
+            <div class="e"><a href="#"><img src="Photos/pic5.jpg" alt=""></a></div>
+            <div class="f"><a href="#"><img src="Photos/pic6.jpg" alt=""></a></div>
+            <div class="g"><a href="#"><img src="Photos/pic7.jpg" alt=""></a></div>
+            <div class="h"><a href="#"><img src="Photos/pic8.jpg" alt=""></a></div>
+         </div>
+         <button><a href="#" class="view-all">View all</a></button>
+      </div>
+
+      <div class="fea"></div>
+      <script>
+         function show() {
+            document.getElementById('sidebar').classList.toggle('active');
+         }
+      </script>
+   </body>
+</html>

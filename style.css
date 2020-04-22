@@ -1,0 +1,345 @@
+:root {
+   --white: #F2F5F7;
+   --gray: #2D3142;
+   --blue: #97C8EB;
+   --darkPink: #F27979;
+   --navy: #293366;
+   --shadow: 0 4px 5px rgba(104, 104, 104, 0.8);
+}
+
+body {
+   margin: 0;
+   padding: 0;
+   background: var(--white);
+   font-family: "Open Sans";
+}
+
+nav {
+   height: 90px;
+   width:100%;
+	padding: 0;
+   background-color: var(--navy);
+	position: fixed;
+	box-shadow: 5px 7px 9px -1px rgba(0,0,255,0.3);
+	z-index: 100;
+   color: var(--white);
+   box-shadow: var(--shadow);
+   font-size: 18px;
+}
+
+nav ul {
+  display: grid;
+  grid-template-columns: 1fr repeat(8, auto) 1fr;
+  grid-column-gap: 20px;
+  padding: 0;
+  margin: 0 20px;
+  list-style: none;
+  height: 90px;
+  justify-content: center;
+  align-items: center;
+}
+
+nav li:nth-child(1) {
+   grid-column-end: 2;
+}
+nav li:nth-child(9) {
+   margin-right: auto;
+}
+
+nav li {
+   padding: 5px;
+}
+nav li a {
+	transition: all 0.3s ease 0s;
+   text-decoration: none;
+	color: inherit;
+   height: 90px;
+   display: flex;
+   align-items: center;
+}
+
+nav li a:hover {
+	color: var(--blue);
+}
+
+.fixedHeaderSpace {
+   height: 90px;
+}
+
+.welcome {
+   min-height: 700px;
+   background-image: url(stateDesign.jpeg);
+   background-size: cover;
+   background-position: center;
+   display:flex;
+   justify-content: center;
+   align-items: center;
+   box-shadow: 5px 7px 9px -1px rgba(0,0,255,0.3);
+}
+
+.welcome .text {
+   color: var(--white);
+   display: flex;
+   flex-direction: column;
+   margin: 0;
+   padding: 0;
+   justify-content: center;
+   align-items: center;
+
+}
+
+.welcome .text h1, h2 {
+   text-align: center;
+   margin: 0;
+   padding: 0;
+   font-size: 70px;
+   font-weight: bolder;
+}
+
+.aboutGrid {
+   margin: 0 10% 0 10%;
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   padding: 1rem;
+   grid-column-gap: 5%;
+   text-align: center;
+   color: var(--blue);
+}
+.aboutGrid h3 {
+   color: var(--blue);
+}
+.about h2 {
+   color: var(--darkPink);
+}
+.experience p {
+   text-align: left;
+}
+.community p {
+   text-align: left;
+}
+.aboutGrid p {
+   color: var(--gray);
+   text-align: center;
+}
+
+
+.location {
+   margin: 20px 0 40px 0;
+   color: var(--gray);
+   font-size: 1.5rem;
+   text-align: center;
+}
+.location i {
+   color: var(--darkPink);
+}
+
+.teams {
+   text-align: center;
+   padding-top: 20px;
+   padding-bottom: 30px;
+   margin-top: 20px;
+   background: #f0f0f0;
+   box-sizing: border-box;
+   width: 100%;
+}
+.teams h2 {
+   font-size: 3rem;
+   margin-bottom: 20px;
+   color: var(--darkPink);
+   text-align: center;
+}
+.teams h3 {
+   font-size: 2rem;
+   margin-bottom: 0.5rem;
+   margin-top: 0.5rem;
+}
+.teams .btn {
+   border: 2px solid var(--blue);
+}
+.teamsGrid {
+   display: grid;
+   margin: 0 20% 0 20%;
+   grid-template-columns: 1fr 1fr;
+   margin-bottom: 0;
+   grid-gap: 5px;
+}
+.teamsGrid a{
+   text-decoration: none;
+   color: var(--blue);
+   transition: all 0.4s ease 0s;
+}
+.teamsGrid a:hover{
+   background-color: var(--blue);
+   color: var(--white);
+}
+.TeamA {
+   grid-column: 1/2;
+}
+.TeamZ {
+   grid-column: 2/3;
+}
+.allTeams {
+   padding: 1rem 2rem;
+   margin: 2rem;
+}
+.allTeams img {
+   height: 20rem;
+   box-shadow: var(--shadow);
+}
+.allTeams p{
+   font-size: 1.5rem;
+   margin-top: 0.5rem;
+   margin-bottom: 0;
+}
+
+.gallery {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+.gallery h2 {
+   font-size: 3rem;
+   margin-top: 20px;
+   color: var(--darkPink);
+   text-align: center;
+}
+
+.gallery .content {
+   display: flex;
+   flex-wrap: wrap;
+   margin-top: 20px;
+   justify-content: center;
+   align-items: center;
+}
+
+.gallery .content .a, .b, .c, .d, .e, .f, .g, .h {
+   width: 20%;
+   margin: 5px;
+   overflow: hidden;
+}
+
+.gallery .content img {
+   max-width: 100%;
+   max-height: 100%;
+   transition: transform .4s;
+}
+.gallery .content img:hover {
+   transform: scale(1.05);
+}
+.gallery .content a {
+   transition: ease 0.3s;
+}
+.gallery .content a:hover {
+   filter: brightness(50%);
+}
+
+.gallery button {
+   background: var(--white);
+   border: 2px solid var(--blue);
+   transition: all 0.3s ease 0s;
+}
+
+.gallery .view-all {
+   text-decoration: none;
+   margin: 0;
+   padding: 2px;
+   font-size: 1.5rem;
+   color: var(--blue);
+   transition: all 0.3s ease 0s;
+}
+
+.gallery .view-all:hover {
+   color: var(--white);
+}
+.gallery button:hover {
+   background: var(--blue);
+}
+
+.fea {
+   height: 1000px;
+}
+
+@media(max-width: 1000px) {
+   nav {
+      position: absolute;
+      height: 100%;
+      width: 600px;
+      left: -600px;
+      transition: all 0.3s ease 0s;
+      font-size: 50px;
+   }
+
+   #sidebar.active {
+      left:0;
+   }
+
+   nav .toggle-btn {
+      position: absolute;
+      top: 30px;
+      left: 630px;
+      z-index: 102;
+   }
+
+   .toggle-btn span {
+      width: 45px;
+      height: 4px;
+      background: #fff;
+      display: block;
+      margin-top: 4px;
+   }
+
+   nav ul {
+      margin-top: 40px;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+   }
+   nav li {
+      padding: 30px;
+   }
+   nav li:nth-child(1) {display: none}
+   nav li:nth-child(2) {flex: 1}
+   nav li:nth-child(3) {flex: 1}
+   nav li:nth-child(4) {flex: 1}
+   nav li:nth-child(5) {flex: 1}
+   nav li:nth-child(6) {flex: 1}
+   nav li:nth-child(7) {flex: 1}
+   nav li:nth-child(8) {flex: 1}
+   nav li:nth-child(9) {flex: 1; margin: auto;}
+
+   .fixedHeaderSpace {
+      display: none;
+   }
+
+   .aboutGrid {
+      margin: 0 20% 0 20%;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      padding: 1rem;
+      grid-column-gap: 5%;
+      text-align: center;
+      color: var(--blue);
+   }
+
+   .teamsGrid {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+   }
+   .TeamA {
+      grid-row: 1/2;
+   }
+   .TeamZ {
+      grid-row: 2/3;
+   }
+   .allTeams {
+      margin: 20px;
+      padding: 0;
+   }
+}
